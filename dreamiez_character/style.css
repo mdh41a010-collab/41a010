@@ -1,0 +1,221 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+body{
+    background-color: rgb(248, 222, 222);
+}
+
+header{
+    background-color: rgb(180, 243, 233);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+
+h1{
+    color: rgb(91, 204, 248);
+    position: fixed;
+    left: 120px;
+    top: 0;
+    line-height: 80px;
+background-image: url(image/41A010R.svg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+width: 210px;
+text-indent: -9999px;
+}
+
+header ul{
+    position:absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+
+header li{
+display: inline;
+margin-right: 4vw;
+}
+
+header a{
+    color: rgb(77, 169, 255);
+    text-decoration: none;
+}
+header a:hover{
+    color: rgb(108, 99, 230);
+    text-decoration: underline;
+}
+
+.news{
+    background-color: rgb(153, 223, 211);
+    color: rgb(36, 177, 67);
+    height: 95vh;
+    background-image:url(image/12513b2180b1b45b16bc9198399ebc24.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.news h2{
+    font-size: 60px;
+    margin-top: 60px;
+}
+
+.news p{
+    color:rgb(245, 147, 147);
+    font-size: 18px;
+    margin-top: 25px 0;
+}
+
+.news a{
+    color: rgb(77, 169, 255);
+    text-decoration: none;
+    border: 1px solid #56b9da;
+    padding: 4px 7px;
+    border-radius: 5px;
+}
+
+.slogan{
+    background-color: rgb(180, 243, 233);
+    color:rgb(36, 177, 67);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 29px;
+    line-height: 8em;
+
+}
+
+.shop{
+display:flex;
+
+}
+.shop img{
+    width:50%;
+}
+
+.info{
+    width:50%;
+    background-color: rgb(200, 195, 209);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h2{
+    font-size: 40px;
+    margin-bottom: 30;
+}
+
+.info p{
+    text-align: 40px;
+    line-height: 2em;
+}
+
+.product{
+    display:flex;
+    background-color:rgb(248, 222, 222);
+    justify-content:space-between;
+    align-items: center;
+    padding: 100px 180px 80px;
+}
+
+.product div{
+    width: 280px;
+    text-align: center;
+}
+
+.product img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h2{
+    font-size: 23px;
+    margin: 20px 0;
+}
+
+.product p{
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+footer{
+    background-color:rgb(153, 223, 211) ;
+    color: rgb(32, 167, 62);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 20px;
+}
+
+@media screen and (max-width:768px) {
+    header ul{
+        display: none;
+    }
+    header h1{
+        left:50%;
+        transform: translate(-50%);
+    }
+
+    .news h2{
+        font-size: 40px;
+    }
+    .menu{
+        display: block;
+        background-color: aliceblue;
+        color:#33ccff;
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .shop{
+        flex-direction: column;
+    }
+
+    .shop img{
+        width: 100%;
+    }
+
+    .info{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .info h2{
+        font-size: 30px;
+    }
+
+    .product{
+        flex-direction: column;
+        padding: 60px 0;
+    }
+
+    .product div{
+        margin-bottom: 30px;
+    }
+   .slogan {
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .slogan blockquote {
+    white-space: normal;
+    font-size: 20px;
+    line-height: 1.6;
+    width: 100%;
+    text-align: center;
+  } 
+}
